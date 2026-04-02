@@ -62,7 +62,7 @@ public class BacktrackingSudokuSolver implements SudokuSolver {
         return false;
     }
 
-    private boolean isValidPlacement(int row, int col, int num, SudokuBoard board) {
+    public boolean isValidPlacement(int row, int col, int num, SudokuBoard board) {
         // when dividing on ints, we truncate the result
         final int boxIndex = (col / 3) + (row / 3) * 3;
 
